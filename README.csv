@@ -1,0 +1,31 @@
+# Directory structure for machine learning projects.\
+├── CHANGELOG\
+├── CONTRIBUTING\
+├── credentials\-- passwds and api keys
+│   ├── aws\
+│   ├── email\
+│   └── gcloud\
+├── data\-- all kinds of data 
+│   ├── cache\-- intermediate data like pkl version of processed dataset
+│   ├── parameters\-- nn weights or any other parameters
+│   ├── processed\-- preprocessed data in form suitable for feeding into the models
+│   └── raw\-- raw datasets, not overwritten by any code
+├── docs\-- documentation for end user
+├── libs\-- external modules and packages
+├── notebooks\-- exploratory notebooks
+├── notes\-- technical notes and ideas mostly internal stuff
+│   ├── references\-- notes pertaining to dataset schema
+│   └── snippets\
+├── README.md\
+├── reports\
+│   ├── diagnostics\-- data diagnostics like missing values, model diagnostics
+│   ├── logs\
+│   │   ├── datafeed\-- logs produced by dataloaders and feeders
+│   │   └── model\-- logs produced by model objects
+│   └── profiling\-- code coverage and profiling
+├── src\
+│   ├── model\
+│   └── scripts\-- scripts mostly bash, sometime python too
+├── tex\-- in case this work is for publication
+│   └── images\-- images other than charts, like arch diagrams
+└── TODO\
